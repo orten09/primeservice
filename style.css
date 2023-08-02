@@ -1,0 +1,516 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+/*___________________________________ header start_________________________________ */
+/* ________________________________________________________________________________ */
+#header{
+    background: linear-gradient(to bottom, #0271c0 0%, #0587e4 50%, #119dff 100%);
+    box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.493);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 80px;
+    padding: 8px 25px;
+    box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.336);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+#header #logo{
+    height:51px;
+    box-shadow: 2px 2px 2px black;
+}
+#header #navbar ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+#header #navbar ul li a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.336);
+    transition: 400ms;
+}
+#header #navbar ul #ex_contact{
+    display: none;
+}
+#header #navbar ul li a:hover{
+    color: yellow;
+    font-size: 22px;
+}
+#header #navbar ul li a i, #header #contact a i{
+    margin: 0px 8px;
+    
+}
+#header #mobile{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+#header #contact a{
+    background: none;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid white;
+    padding: 1vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.336);
+}
+#header #contact a:hover{
+    background-color: yellow;
+    color: #119dff;
+}
+#mobile{
+    display: none;
+}
+#close{
+    display: none;
+}
+/*___________________________________ Hero_________________________________ */
+/* ________________________________________________________________________________ */
+#hero{
+    background-color: yellow;
+}
+#hero #hero_heading{
+    /* background-color:rgba(0, 0, 0, 0.541); */
+    background-color:  #003e6bb4;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 200px;
+    top: 120px;
+    z-index: 99;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 100px 0px 100px 0px;
+    box-shadow: inset 6px 6px 10px 0 rgba(0,0,0,0.2), inset -6px -6px 10px 0 rgba(255,255,255,0.5);
+}
+#hero #hero_heading #logo_hero{
+    width: 30vw;
+    /* background-color: rgba(255, 255, 255, 0.151); */
+}
+
+#hero #hero_heading #hero_box{
+    background-color:  #119dff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero #hero_heading #hero_box #box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color:chartreuse; */
+    margin: 15px;
+    width: 15vw;
+    height: 12vh;
+    color: white;
+}
+#hero #hero_heading #hero_box #box h4, #hero #hero_heading #hero_box #box i{
+    font-size: 3vh;
+    display: flex;
+
+}
+#hero #hero_heading #logo_hero img{
+    width: 30vw;
+}
+#hero #hero_heading h1{
+    font-size: 7vw;
+     font-weight: 700;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #119dff;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px -5px 3px #0076ca49;
+    text-align: center;
+}
+#hero #hero_heading h5{
+    margin: 15px;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+}
+.carousel-item{
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#hero .slide .carousel-inner .image_1{
+    background-image: url(photos/hero/hero4.jpg);
+}
+#hero .slide .carousel-inner .image_2{
+    background-image: url(photos/hero/hero2.jpg);
+}
+#hero .slide .carousel-inner .image_3{
+    background-image: url(photos/hero/hero3.jpeg);
+}
+/*___________________________________ mid section_________________________________ */
+/* ________________________________________________________________________________ */
+#mid{
+    background-image: url(photos/background/mid-back8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+}
+#mid .card{
+    margin: 40px;
+    width: 30vw;
+    height: 70vh;
+    background-color: #0000006e;
+    box-shadow: inset 6px 6px 10px 0 rgba(0,0,0,0.2), inset -6px -6px 10px 0 rgba(255,255,255,0.5);
+    border: none;
+}
+#mid .card .card-img-top{
+    box-shadow: 4px 3px 15px 2px rgba(255, 255, 255, 0.493);
+}
+
+#mid .card .card-body .card-title{
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#mid .card .card-body .card-text{
+    font-size: 17px;
+    font-weight: 400;
+}
+#mid .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+#mid .card .card-body .btn{
+    display: flex;
+    justify-content: center;
+    padding: 15px 50px;
+    background: none;
+    border-color: white;
+}
+#mid .card .card-body .btn:hover{
+    background-color: #119dff;
+}
+/*___________________________________ prime_services_________________________________ */
+/* ________________________________________________________________________________ */
+#prime_services{
+    background:linear-gradient(to bottom, #ffffff 0%, #d3edff 50%, #aeddff 100%);;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+#prime_services h1{
+     font-size: 8vw;
+     display: block;
+     font-weight: 700;
+     text-transform: uppercase;
+     -webkit-text-stroke: 1px #119dff;
+     -webkit-text-fill-color: transparent;
+     text-shadow: 2px -2px 3px #0076ca49;
+}
+#prime_services #ps-boxs{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* background-color: yellowgreen; */
+    padding: 20px;
+}
+#prime_services #ps-boxs .card{
+    width: 210px;
+    margin: 10px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.253);
+}
+#prime_services #ps-boxs .card :hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.116);
+}
+#prime_services #ps-boxs .card .card-body{
+    background-color: #0587e4;
+    height: 80px;
+}
+#prime_services #ps-boxs .card .card-body p{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+#prime_services #ps-boxs .card .card-img-top{
+    height: 200px;
+}
+#prime_services marquee img{
+    margin: 20px;
+}
+
+/*___________________________________ Contact_________________________________ */
+/* ________________________________________________________________________________ */
+#contact_body{
+    background-image: url(photos/background/mid_back12.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#contact_body #contact_form{
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#contact_body #contact_form #map iframe{
+    width: 500px;
+    height: 760px;
+    border-radius: 15px 0px 0px 15px;
+}
+#contact_body #contact_form form{
+    /* background-color:turquoise; */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #119cffa1;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: inset 6px 6px 10px 0 rgba(0,0,0,0.2), inset -6px -6px 10px 0 rgba(255,255,255,0.5);
+
+}
+#contact_body #contact_form form .fli{
+    width: 400px;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: space-between;
+}
+#contact_body #contact_form form .fli label{
+    padding: 10px 10px 10px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1.5px 1px 2px black;
+}
+#contact_body #contact_form form .fli input{
+    width: 280px;
+    margin: 10px 0px 10px 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+#contact_body #contact_form form h5{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    background-color:#0587e4;
+    margin: 5px;
+    color: white;
+    padding: 5px;
+}
+#contact_body #contact_form form select, textarea, button{
+    margin: 10px 0px 10px 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+#contact_body #contact_form form button{
+    margin: 10px 0px 10px 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+}
+#contact_body #contact_form form button:hover{
+    background-color: #0271c0;
+    color: white;
+}
+#contact_body #contact_form form .fli input::placeholder{
+    padding: 20px;
+}
+
+/*___________________________________ Media Query_________________________________ */
+/* ________________________________________________________________________________ */
+
+@media(max-width:799px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        position:fixed;
+        top: 0;
+        right: -300px;
+        background: linear-gradient(to bottom, #0076ca 0%, #0587e4 50%, #119cff4f 100%);
+        box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.493);
+        width: 250px;
+        height: 50vh;
+        padding: 0px 0 0 0px;
+        transition: 0.3s;
+    }
+    #header #navbar ul {
+        flex-direction: column;
+    }
+    #header #navbar ul li{
+        margin: 20px 0px;
+    }
+    #header #navbar ul #ex_contact{
+        display: initial;
+    }
+    #header #navbar ul li a {
+        font-size: 20px;
+    }
+    #header #contact a {
+        margin: 10px;
+        font-size: 15px;
+        padding: 15px 20px;
+    }
+    #mobile{
+        display: initial;
+    }
+    #close{
+        display: initial;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar.inactive{
+        right: -300px;
+    }
+
+    #hero #hero_heading {
+        width: 70vw;
+        height: 50vh;
+    }
+    #hero #hero_heading {
+        left: 100px;
+        top: 120px;
+        z-index: 99;
+    }
+    #hero #hero_heading h1 {
+        font-size: 13vw;
+    }
+    #hero #hero_heading h5 {
+        font-size: 17px;
+    }
+    #hero #hero_heading #hero_box #box h4, #hero #hero_heading #hero_box #box i {
+        font-size: 2vh;
+        display: flex;
+    }
+    #hero #hero_heading #logo_hero img {
+        width: 35vw;
+    }
+    #hero #hero_heading #hero_box {
+        width: 60vw;
+    }
+    #hero #hero_heading #hero_box #box h4, #hero #hero_heading #hero_box #box i {
+        font-size: 2.5vh;
+    }
+    /* _________________________________________________________________________________________ */
+    #mid{
+        flex-direction: column;
+        align-items: center;
+    }
+    #mid .card{
+        width: 60vw;
+    }
+
+}
+
+
+/*___________________________________ Media Query (SM)_________________________________ */
+/* ________________________________________________________________________________ */
+@media (max-width:499px){
+    #header #contact a {
+        background: none;
+        margin: 10px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 600;
+        border: 2px solid white;
+        padding: 15px 5px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.336);
+    }
+    /* __________________________________________________________________________________________ */
+    #hero #hero_heading {
+        width: 80vw;
+        height: 50vh;
+    }
+    #hero #hero_heading #logo_hero{
+        width: 50vw;
+    }
+    #hero #hero_heading #logo_hero img{
+        width: 50vw;
+    }
+    #hero #hero_heading {
+        left: 50px;
+        top: 200px;
+    }
+    #hero #hero_heading h1 {
+        font-size: 15vw;
+    }
+    #hero #hero_heading h5 {
+        font-size: 17px;
+    }
+    #hero #hero_heading #logo_hero img {
+        width: 50vw;
+    }
+    #hero #hero_heading #hero_box {
+        width: 60vw;
+    }
+    #hero #hero_heading #hero_box #box h4, #hero #hero_heading #hero_box #box i {
+        font-size: 2vh;
+    }
+    /* _________________________________________________________________________________________ */
+    #mid .card{
+        width: 80vw;
+    }
+    /* _____________________________________________________________________________ */
+    #prime_services #ps-boxs {
+        width: 97vw;
+    }
+    #prime_services h1 {
+        font-size: 15vw;
+        -webkit-text-stroke: 1px #119dff;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px -2px 3px #0076ca49;
+    }
+    #prime_services #ps-boxs .card {
+        width: 140px;
+    }
+    #prime_services #ps-boxs .card .card-img-top {
+        height: 140px;
+    }
+    #prime_services #ps-boxs .card .card-body p {
+        font-size: 13px;
+    }
+
+}
