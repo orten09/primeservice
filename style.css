@@ -178,7 +178,7 @@
 #mid .card{
     margin: 40px;
     width: 30vw;
-    height: 70vh;
+    height: 80vh;
     background-color: #0000006e;
     box-shadow: inset 6px 6px 10px 0 rgba(0,0,0,0.2), inset -6px -6px 10px 0 rgba(255,255,255,0.5);
     border: none;
@@ -265,8 +265,8 @@
 #prime_services #ps-boxs .card .card-img-top{
     height: 200px;
 }
-#prime_services marquee img{
-    margin: 20px;
+#brand_marquee marquee img{
+    margin: 20px 0px 20px 00px;
 }
 
 /*___________________________________ Contact_________________________________ */
@@ -359,17 +359,16 @@
 footer{
     background: linear-gradient(rgb(2, 113, 192) 0%, rgb(5, 135, 228) 50%, rgb(17, 157, 255) 100%);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: center;
 }
 footer #box{
     /* background-color: turquoise; */
-    width: 280px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px;
+    margin: 20px 0px 20px 0px;
 }
 footer #box h4{
     color: white;
@@ -554,6 +553,7 @@ footer #box #f_icons i:hover{
     /* _____________________________________________________________________________ */
     #prime_services #ps-boxs {
         width: 97vw;
+        padding: 0;
     }
     #prime_services h1 {
         font-size: 15vw;
@@ -571,12 +571,76 @@ footer #box #f_icons i:hover{
         font-size: 13px;
         margin: -10px;
     }
+
     /* ____________________________________________________________________________________________________ */
+    #contact_body #contact_form #map iframe {
+        width: 300px;
+        height: 450px;
+    }
+    #contact_body #contact_form form h5 {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #0587e4;
+        margin: 5px;
+        color: white;
+        padding: 5px;
+    }
     #contact_body #contact_form form .fli {
-        width: 400px;
-        /* background-color: violet; */
+        width: 300px;
         display: flex;
         justify-content: space-between;
         margin: 0px 10px 0px 10px;
     }
+    #contact_body #contact_form form {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #119cffa1;
+        border-top: 1px solid white;
+        border-right: 1px solid white;
+        border-radius: 0px 15px 15px 0px;
+        box-shadow: inset 6px 6px 10px 0 rgba(0,0,0,0.2), inset -6px -6px 10px 0 rgba(255,255,255,0.5);
+    }
+    #contact_body #contact_form form .fli label {
+        font-size: 15px;
+    }
+    #contact_body #contact_form form .fli input {
+        width: 200px;
+        margin: 10px 0px 10px 10px;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    #contact_body #contact_form form textarea{
+        margin: 10px 0px 10px 10px;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        width: 250px;
+        height: 100px;
+    }
+    /* _________________________________________________________________________________________________________ */
+    footer #box {
+        /* background-color: turquoise; */
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+    footer #box h4 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: underline;
+        margin-bottom: 25px;
+    }
+    footer #box p, footer #box h4 i {
+        font-size: 15px;
+    }
+
 }
